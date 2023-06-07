@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* NAVBAR STYLING */
+
+.nav-bar {
+  background-image: url("/images/Main\ image.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar-nav{
+  background-color: rgb(255, 61, 61);
+}
+
+.nav-item a{
+  color: #fff;
+}
+.dropdown-menu a{
+  color: black;
+}
+
+.nav-link:hover {
+  color: white;
+  text-decoration: underline;
+  padding: 4px;
+  border-radius: 10%;
+  text-decoration: none;
+}
+
+.navbar-brand span {
+  color: green;
+  font-weight: 500;
+  font-size: 2.7rem;
+}
+
+/* MAIN QUOTE */
+
+.hero-content {
+  text-align: center;
+}
+
+.travel-quotes p {
+  font-size: 2em;
+  font-weight: 600;
+  color: green;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+
+.travel-quotes span {
+  font-family: "Courgette", cursive;
+}
+
+/* OUR FACILITIES STYLING */
+
+.facilities{
+  margin-top: 350px;
+}
+
+.facilities h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+.facilities h1 span {
+  color: green;
+}
+
+.facilities h2 {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Send Flowers", cursive;
+  color: rgb(0, 69, 244);
+}
+.facilities .facility {
+  text-align: center;
+}
+
+.facilities .facility h5 {
+  color: green;
+}
+
+.facilities .facility p {
+  text-align: justify;
+  font-family: "Send Flowers", cursive;
+}
+
+.facilities .facility img {
+  width: 100%;
+  height: 13em;
+}
+
+.card {
+  padding: 1px 0 10px 0;
+}
+
+.card:hover {
+  /* transform: translate(0px, -10px);
+  background-color: #001eff;
+  background-image: linear-gradient(180deg, orange 0%, yellow 100%); */
+  transition: all 0.2s;
+  box-shadow: orange 3px 5px 5px 3px, white 0px 2px 16px 0px;
+}
+
+.modal-body h5 {
+  color: green;
+}
+.text-center .btn:hover {
+  background-color: blueviolet;
+}
+
+/* OUR GALLERY STYLING */
+
+.gallery h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+.gallery h1 span {
+  color: green;
+}
+.gallery h2 {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Send Flowers", cursive;
+  color: rgb(0, 69, 244);
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 42px;
+}
+.photo1 img {
+  width: 320px;
+  height: 250px;
+  padding: 6px;
+  transition: all 0.4s;
+}
+
+.photo1 img:hover {
+  transform: translate(0px, -20px);
+  padding: 6px;
+  background-color: #001eff;
+  background-image: linear-gradient(180deg, orange 0%, yellow 100%);
+}
+
+/* OUR POINT OF ATTRACTION STYLING */
+
+.attraction h1 {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.attraction h1 span {
+  color: green;
+}
+
+.attraction h2 {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Send Flowers", cursive;
+  color: rgb(0, 69, 244);
+}
+.carousel-item img {
+  height: 600px;
+  width: 100%;
+  padding: 4px;
+  background-color: orange;
+}
+
+.carousel-caption h1 {
+  color: white;
+  font-weight: 900;
+}
+
+/* VIDEO SECTION */
+
+.bg-light h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.bg-light h1 span {
+  color: green;
+}
+
+.bg-light p {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Send Flowers", cursive;
+  color: rgb(0, 69, 244);
+}
+
+.video-section .youtube-video iframe {
+  padding: 5px;
+  background-color: orange;
+  width: 100%;
+  height: 350px;
+  margin-top: 40px;
+}
+
+/* MAP SECTION STYLING */
+
+.map-sec iframe {
+  margin-top: 40px;
+  width: 100%;
+  padding: 5px;
+  background-color: orange;
+}
+
+/* WHY SUNRISE VALLEY STYLING */
+
+.valley h1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+.valley h1 span {
+  color: green;
+}
+.valley p {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Send Flowers", cursive;
+  color: rgb(0, 69, 244);
+}
+.image {
+  position: relative;
+  border-radius: 1px;
+  padding: 1rem;
+}
+
+.image__img {
+  display: block;
+  width: 110%;
+  height: 12rem;
+  border-radius: 10px;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 99%;
+  top: 1rem;
+  height: 12rem;
+  background: rgba(5, 5, 5, 0.7);
+  color: rgb(230, 204, 155);
+  font-family: Arials-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 10px;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image--overlay--primary {
+  background: #999f9d;
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 0.9;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* WHAT MAKES US STAND OUT */
+
+.services {
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 40px;
+}
+.services h2 span {
+  color: green;
+}
+
+.services p {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Send Flowers", cursive;
+  color: rgb(0, 69, 244);
+}
+
+.services .card {
+  width: 90%;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.row h4 {
+  font-size: 1.4em;
+  color: green;
+}
+
+.services .card:hover {
+  box-shadow: orange 3px 5px 5px 3px, white 0px 2px 16px 0px;
+}
+
+.circle {
+  width: 140px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  font-size: 14px;
+  font-weight: 35px;
+  color: #697087;
+}
+
+.learnmore1 {
+  font-size: 18px;
+  font-weight: 50px;
+  color: #5702f4;
+}
+
+.learnmore2 {
+  font-size: 18px;
+  font-weight: 50px;
+  color: #001eff;
+}
+
+.learnmore3 {
+  font-size: 18px;
+  font-weight: 50px;
+  color: #2500f4;
+}
+
+.circle1 .fa-chrome {
+  color: #0004f5;
+  font-size: 40px;
+}
+
+.circle2 .fa-chrome {
+  color: #001ade;
+  font-size: 40px;
+}
+
+.circle3 .fa-chrome {
+  color: #42a593;
+  font-size: 40px;
+}
+
+/* REVIEW STYLING */
+
+.testimonial .customer {
+  font-size: 40px;
+  font-weight: 630;
+  color: black;
+}
+.testimonial .customer span {
+  color: green;
+}
+.testimonial h2 {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "Send Flowers", cursive;
+  color: rgb(0, 69, 244);
+}
+
+.testimonial h5 {
+  color: orange;
+}
+
+.testimonial-content {
+  width: 60%;
+}
+
+.testimonial-content h5 {
+  text-align: center;
+}
+
+.testimonial-content p {
+  text-align: justify;
+}
+
+/* FOOTER STYLING */
+
+.footer-main {
+  background-color: bisque;
+  color: rgb(0, 0, 0);
+  padding-top: 2rem;
+  width: 100%;
+}
+.footer-main .about h5 {
+  margin-left: 14%;
+  color: rgb(0, 76, 255);
+}
+
+.footer-main .about ul a {
+  text-decoration: none;
+  list-style: none;
+}
+.footer-main .about ul li {
+  margin-top: 0.7em;
+  color: rgb(0, 0, 0);
+  font-size: larger;
+}
+.footer-main .about ul li:hover {
+  text-decoration: underline rgb(10, 52, 177);
+}
+.footer-main .about {
+  margin-left: 20%;
+}
+
+.social-media{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-image {
+  margin-left: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.footer-image img{
+  width: 100%;
+}
+.social-media h5 {
+  color: rgb(0, 76, 255);
+  margin-left: 80px;
+  /* margin-top: 12px; */
+}
+.footer-main .social-media i {
+  padding-left: 1em;
+  color: rgb(93, 84, 215);
+}
+
+.fticons {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.footer-main .social-media i:hover {
+  color: green;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-nav{
+    text-align: center;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 17px;
+  }
+
+  .nav-item a{
+    color: black;
+  }
+  
+  .nav-link{
+    color: #42a593;
+
+  }
+
+  .travel-quotes p{
+    margin-top: 100px;
+    background-color: aliceblue;
+    border-radius: 17px;
+    margin-right: 30px;
+    opacity: 0.7;
+  }
+
+  
+.facilities{
+  margin-top: 550px;
+}
+
+  .pictures{
+    justify-content: center;
+  } 
+
+  .image__img{
+    width: 100%;
+  }
+
+  .image__overlay{
+    left: 0;
+  }
+
+  .footer-image img {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .footer-main .about h5{
+    margin-left: 10%;
+  }
+
+  .social-media h5{
+    margin-left: 0;
+  }
+
+  .footer-image{
+    margin-left: 0;
+  }
+
+  .fticons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+
+  .footer-main .social-media i {
+    padding-left: 12px;
+  }
+}
